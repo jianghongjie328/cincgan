@@ -17,7 +17,7 @@ class Data:
             for  file in files:
                 self.imgname.append(self.srcpath+'\\'+file)
         #存进self.imgname
-        #负责获取该文件夹下的文件名
+
     def save(self,img,name):
         cv2.imwrite(self.dstpath+'\\'+name+'.png',img)
         #放到目标文件夹下，单张图片
