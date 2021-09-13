@@ -1,9 +1,9 @@
 # cincgan
-#本人刚刚开始学习pytorch
-#因为我发现github上的cincgan代码我基本上看不懂，所以只能对应着Junshk前辈的cincgan代码的一部分进行复现，
-#接下来我会慢慢的对应着Junshk前辈的代码对我自己的代码进行优化。
-#文件结构如下：
-#cincgan
+##本人刚刚开始学习pytorch
+##因为我发现github上的cincgan代码我基本上看不懂，所以只能对应着Junshk前辈的cincgan代码的一部分进行复现，
+##接下来我会慢慢的对应着Junshk前辈的代码对我自己的代码进行优化。
+##文件结构如下：
+##cincgan
 #  Net
 #    inner 去除噪声部分的代码
 #      Block.py 
