@@ -3,7 +3,7 @@
 因为我发现github上的cincgan代码我基本上看不懂，所以只能对应着Junshk前辈的cincgan代码的一部分进行复现，  
 接下来我会慢慢的对应着Junshk前辈的代码对我自己的代码进行优化。  
 目前优化效果不是很好，降噪声的部分loss处在0.5左右，但视觉效果不好  
-这个是降噪声的图
+这个是降噪声的图  
 ![denoise](https://user-images.githubusercontent.com/55622672/136787276-a2882e77-f21f-44e1-ab44-3d34de06f9af.png)  
 ##文件构如下：
 cincgan  
