@@ -2,7 +2,7 @@
 #奇数不行
 import torch.nn as nn
 import torch.nn.functional as F
-from cincgan.Net.inner.Block import Block
+from Block import Block
 class G1(nn.Module):
     def __init__(self):
         super(G1,self).__init__()
@@ -15,14 +15,14 @@ class G1(nn.Module):
         self.conv5=nn.Conv2d(in_channels=64,out_channels=64,kernel_size=3,stride=1,padding=1)
         self.conv6=nn.Conv2d(in_channels=64,out_channels=3,kernel_size=7,stride=1,padding=3)
     def forward(self,x):
-        x=self.leakyrelu(self.conv1(x))
-        x=self.leakyrelu(self.conv2(x))
-        x=self.leakyrelu(self.conv3(x))
-        x=self.block(x)
-        x=self.leakyrelu(self.conv4(x))
-        x=self.leakyrelu(self.conv5(x))
-        x=self.conv6(x)
-        return x
+        x1=self.leakyrelu(self.conv1(x))
+        x2=self.leakyrelu(self.conv2(x1))
+        x3=self.leakyrelu(self.conv3(x2))
+        x4=self.block(x3)
+        x5=self.leakyrelu(self.conv4(x4))
+        x6=self.leakyrelu(self.conv5(x5))
+        x7=self.conv6(x6)
+        return x7
     def make_layer(self,block,num):
         y=[]
         for _ in range(num):

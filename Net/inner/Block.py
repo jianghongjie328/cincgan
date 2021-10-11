@@ -9,7 +9,7 @@ class Block(nn.Module):
         self.leakyrelu=nn.LeakyReLU(negative_slope=0.2,inplace=True)
     def forward(self,x):
         y=x
-        x=self.leakyrelu(self.conv1(x))
-        x=self.leakyrelu(self.conv2(x))
-        y.add_(x)
-        return y
+        x1=self.leakyrelu(self.conv1(x))
+        x2=self.leakyrelu(self.conv2(x1))
+        y1=y+x2
+        return y1
