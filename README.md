@@ -5,6 +5,8 @@
 目前优化效果不是很好，降噪声的部分loss处在0.5左右，但视觉效果不好  
 这个是降噪声的图  
 ![denoise](https://user-images.githubusercontent.com/55622672/136787276-a2882e77-f21f-44e1-ab44-3d34de06f9af.png)  
+这个是标准图  
+![1](https://user-images.githubusercontent.com/55622672/136790273-dea0192f-b910-40d4-b7c8-59f19933d059.png)  
 ##文件构如下：
 cincgan  
 &nbsp;Net  
